@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* //////////////////////////////////////////////////
+[Base]
+////////////////////////////////////////////////// */
+
+/* --------------------------------------------------
+	0. Resetting default margin and padding
+-------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+object, iframe, pre, code, p, blockquote,
+form, fieldset, legend,
+table, th, td, caption, tbody, tfoot, thead,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section, audio, video, canvas {
+  margin: 0;
+  padding: 0;
+}
+article, aside, figure, figcaption,footer,
+h1, h2, h3, h4, h5, h6, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* --------------------------------------------------
+	1. HTML, Body, Anchor
+-------------------------------------------------- */
+html, body { width: 100%; } /* for mozilla: always display scrollbar */
+
+body {
+  word-break: normal;
+  -webkit-text-size-adjust:100%;
+  text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  background: none;
+}
+
+a { color: #2e394b; }
+a:link, a:visited { text-decoration: underline; }
+a:hover, a:active  { text-decoration: none; }
+
+/* --------------------------------------------------
+	2. Heading, Paragraph
+-------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+/* --------------------------------------------------
+	3. List
+-------------------------------------------------- */
+li { list-style: none; }
+/* --------------------------------------------------
+	5. Form
+-------------------------------------------------- */
+fieldset { border: none; }
+input, textarea, select, label {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+}
+textarea { resize: vertical; }
+legend { display: none; }
+
+/* --------------------------------------------------
+	6. Other
+-------------------------------------------------- */
+img {
+  border: none;
+  vertical-align: top;
+}
+object {
+  vertical-align: middle;
+  outline: none;
+}
+em, strong {
+  font-weight: bold;
+  font-style: normal;
+}
+small { font-size: 100%; }
+abbr, acronym {
+  border: none;
+  font-variant: normal;
+}
+
+.clr {zoom:1;}
+.clr:after {
+	content: "";
+	display: block;
+	clear: both;
+}
